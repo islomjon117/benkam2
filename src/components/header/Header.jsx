@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { FilterContext } from "../../context";
 
 const Header = () => {
-  const { content, setContent } = useContext(FilterContext);
+  const { content } = useContext(FilterContext);
 
   return (
     <div className="header">
@@ -23,7 +23,10 @@ const Header = () => {
                 rel="noopener noreferrer"
                 to="https://akfagroup.com/benkam/"
               >
-                360° {content.header_title}<span style={{ color: "white", marginLeft:"10px"}}>BENKAM</span>
+                360° {content.header_title}
+                <span style={{ color: "white", marginLeft: "10px" }}>
+                  BENKAM
+                </span>
               </Link>
             </button>
           </div>

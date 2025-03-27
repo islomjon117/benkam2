@@ -17,9 +17,16 @@ import img1 from "../../assets/carusel_img/bg1.jpg";
 import img3 from "../../assets/carusel_img/bg3.jpg";
 import img4 from "../../assets/carusel_img/bg4.jpg";
 import img5 from "../../assets/carusel_img/bg5.jpg";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import Aos from "aos";
 
 export default function App() {
+
+    useEffect(() => {
+      Aos.init({
+        duration: 1500, // Animatsiya davomiyligi (ms)
+      });
+    }, []);
 
   const{content} = useContext(FilterContext)
 
@@ -29,13 +36,13 @@ export default function App() {
         <div className="container">
           <div className="carusel_main">
             <div className="carusel_title">
-              <h1>
+              <h1 data-aos="zoom-in-up">
                 {content.our_ompany}
               </h1>
             </div>
           </div>
         </div>
-        <div className="carusel_box">
+        <div className="carusel_box" data-aos="fade-right">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}

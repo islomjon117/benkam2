@@ -7,16 +7,23 @@ import bg1 from "../../assets/our_products_img/bg1.jpg";
 import bg2 from "../../assets/our_products_img/bg3.jpg";
 import bg3 from "../../assets/our_products_img/bg4.jpg";
 
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import Aos from "aos";
 
 const OurProducts = () => {
- 
+  
+  useEffect(() => {
+    Aos.init({
+      duration: 1000, // Animatsiya davomiyligi (ms)
+    });
+  }, []);
+
   const {content} = useContext(FilterContext);
   
   return (
@@ -24,12 +31,12 @@ const OurProducts = () => {
       <div className="ourproducts">
         <div className="container">
           <div className="ourproducts_main">
-            <div className="ourproducts_title">
+            <div className="ourproducts_title" data-aos="fade-up">
               <h1>
                {content.our_product_title1} <span>{content.our_product_title2}</span>
               </h1>
             </div>
-            <div className="responsive_carusel">
+            <div className="responsive_carusel" data-aos="fade-up">
               <Swiper
                 className="mySwiper"
                 modules={[Navigation, Autoplay]}

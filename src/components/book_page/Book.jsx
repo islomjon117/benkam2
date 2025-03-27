@@ -1,27 +1,36 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../book_page/book.css";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 import { TbSend } from "react-icons/tb";
 import { FilterContext } from "../../context";
+import Aos from "aos";
 
 const Book = () => {
-  const { phone, isValid, content, handleChange } = useContext(FilterContext);
+  const { phone, content, handleChange } = useContext(FilterContext);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000, // Animatsiya davomiyligi (ms)
+    });
+  }, []);
+
 
   return (
     <div className="book" id="book">
       <div className="container">
         <div className="book_main">
           <div className="book_title">
-            <h1>
+            <h1  data-aos="fade-up">
               {content.contact_title1.split(" ").slice(0, -1).join(" ")}{" "}
               <span className="last-word">
                 {content.contact_title1.split(" ").pop()}
               </span>
             </h1>
           </div>
-          <div className="prosta_div">
+
+          <div className="prosta_div" data-aos="zoom-in">
             <form action="#" method="POST">
               <div className="contact_inputs">
                 <input
@@ -63,6 +72,7 @@ const Book = () => {
               </div>
             </form>
           </div>
+
         </div>
       </div>
     </div>

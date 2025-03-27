@@ -9,10 +9,17 @@ import { FilterContext } from "../../context";
 import { MdArrowOutward } from "react-icons/md";
 
 import img1 from "../../assets/ourblog_img/img1.jpg";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import Aos from "aos";
 
 const OurBlog = () => {
   const { content } = useContext(FilterContext);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000, // Animatsiya davomiyligi (ms)
+    });
+  }, []);
 
   return (
     <>
@@ -20,7 +27,7 @@ const OurBlog = () => {
         <div className="container">
           <div className="ourblog_main">
             <div className="ourblog_title">
-              <h1>
+              <h1 data-aos="zoom-out">
                 {content.last_news.split(" ").slice(0, -1).join(" ")}{" "}
                 <span className="last-word">
                   {content.last_news.split(" ").pop()}
@@ -31,7 +38,7 @@ const OurBlog = () => {
               <br />
             </div>
 
-            <div className="our_blog_carusel">
+            <div className="our_blog_carusel" data-aos="fade-right">
               <Swiper
                 loop={true}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}

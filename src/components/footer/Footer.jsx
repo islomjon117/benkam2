@@ -7,17 +7,25 @@ import { FiYoutube } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa";
 
 import logo2 from "../../assets/logo/logo.png";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import Aos from "aos";
 
 function Footer() {
   const { content } = useContext(FilterContext);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000, // Animatsiya davomiyligi (ms)
+    });
+  }, []);
 
   return (
     <>
       <div className="footer">
         <div className="container">
           <div className="footer_main">
-            <div className="footer_first_column">
+
+            <div className="footer_first_column" data-aos="fade-up">
               <div className="footer_logo">
                 <Link>
                   <img src={logo2} alt="" />
@@ -46,7 +54,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="footer_second_column">
+            <div className="footer_second_column" data-aos="fade-down">
               <Link>
                 <h1 className="footerfourth_title">{content.footer_about}</h1>
               </Link>
@@ -64,7 +72,7 @@ function Footer() {
               </Link>
             </div>
 
-            <div className="footer_third_column">
+            <div className="footer_third_column" data-aos="fade-up">
               <Link>
                 <h1 className="footerfourth_title">{content.footer_offer}</h1>
               </Link>
@@ -75,7 +83,7 @@ function Footer() {
               <Link>{content.footer_link9}</Link>
             </div>
 
-            <div className="footer_fourth_column">
+            <div className="footer_fourth_column" data-aos="fade-down">
               <Link>
                 <h1 className="footerfourth_title">{content.footer_production}</h1>
               </Link>
@@ -86,6 +94,7 @@ function Footer() {
               <Link>{content.footer_link14}</Link>
               <Link>{content.footer_link15}</Link>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,20 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { FilterContext } from "../../context";
 import "../contact_2/contact2.css";
 
 import { TbPhoneCall } from "react-icons/tb";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
+import Aos from "aos";
 
 const Contact2 = () => {
-
   const {content} = useContext(FilterContext)
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000, // Animatsiya davomiyligi (ms)
+    });
+  }, []);
 
   return (
     <>
-      <div className="contact2">
+      <div className="contact2" >
         <div className="container">
-          <div className="contact2_main">
+          <div className="contact2_main" data-aos="flip-down">
             <div className="phone_box">
               <div className="phone_icon">
                 <p>
