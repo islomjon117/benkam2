@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { FilterContext } from "../../context";
 import { Link, Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import "./Navbar.css";
+import "../navbar/navbar.css";
 
 import logo from "../../assets/logo/logo.png";
 
