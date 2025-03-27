@@ -1,5 +1,4 @@
-import React from 'react'
-import GreenEx from '../components/greenEx/GreenEx.Jsx'
+import GreenEx from '../components/greenEx/GreenEx.jsx'
 import GreenInfo from '../components/greenInfo/GreenInfo'
 import Greenex2 from '../components/greenEX_2/Greenex2'
 import Greenex3 from '../components/greenex_3/Greenex3'
