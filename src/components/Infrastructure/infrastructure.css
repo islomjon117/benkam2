@@ -1,0 +1,71 @@
+.infrastructure {
+  background: #1b1b1b;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px; /* Yonlarga padding */
+  padding-right: 20px; /* Yonlarga padding */
+}
+
+.infrastructure_box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px; /* Elementlar o'rtasidagi bo'shliq */
+}
+
+.infrastucture_right {
+  max-width: 600px;
+  flex: 1;
+}
+
+.infrastucture_right img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #f5b754;
+}
+
+.infrastructure_info {
+  width: 600px;
+  color: white;
+  flex: 1;
+}
+
+.infrastructure_info p {
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.infrastructure_title {
+  color: #f5b754;
+  font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .infrastucture_right,
+  .infrastructure_info {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px; /* O'rtada bo'shliq qo'shish */
+  }
+
+  .infrastructure_title {
+    font-size: 20px;
+  }
+
+  .infrastructure_info p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infrastructure_title {
+    font-size: 18px;
+  }
+
+  .infrastructure_info p {
+    font-size: 16px;
+  }
+}

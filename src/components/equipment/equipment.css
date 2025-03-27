@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.equipment {
+  background: #1b1b1b;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.equipment_title {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/equipment/img1.png");
+  margin: auto;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.equipment_box_left img{
+    width: 99%;
+}
+
+.equipment_title p{
+    width: 40%;
+    margin-top: 40px;
+    color: #f5b754;
+}
+
+.equipment_box_left{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.equipment_table{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.equipment_table_left li,
+.equipment_table_right li{
+    margin: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+.equipment_table_left li::marker,
+.equipment_table_right li::marker{
+    color: #f5b754;
+}
+
+.equipment_table_right,
+.equipment_table_left{
+    width: 40%;
+}

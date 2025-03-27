@@ -1,0 +1,93 @@
+.offer_button {
+  background: #1b1b1b;
+  padding-bottom: 50px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #f5b754;
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Har bir box'ga fon rasmi beramiz */
+.box1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets//offer_info/img5.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.box2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets//offer_info/img4.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.box3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets//offer_info/img3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.box4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets//offer_info/img2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Textni boshlang'ich holatda pastga yashiramiz */
+.box h2 {
+  position: absolute;
+  bottom: -50px; /* Yashirin boshlang'ich pozitsiya */
+  transition: bottom 0.3s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Hover qilinganda matn pastdan chiqib keladi */
+.box1:hover h2,
+.box2:hover h2,
+.box3:hover h2,
+.box4:hover h2 {
+  bottom: 20px;
+}
+
+/* Hover bo'lganda ozgina kattalashish effekti */
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .box{
+    justify-content: center;
+  }
+}

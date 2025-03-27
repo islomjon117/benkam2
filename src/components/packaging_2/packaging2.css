@@ -1,0 +1,21 @@
+.packaging2{
+    background-color: #1b1b1b;
+    padding-top: 100px;
+}
+
+.packaging2_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.packaging2_box_right img{
+    width: 640px;
+    border-radius: 10px;
+    border: 2px solid #f5b754;
+}
+
+.packaging2_box_left p{
+    width: 50%;
+    color: white;
+    font-size: 24px;
+}

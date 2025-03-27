@@ -1,0 +1,268 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  transition: background 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  background: transparent;
+}
+
+.navbar_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: #222222; /* Yoki istalgan rang */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav_links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav_links a:hover {
+  color: #f4a261;
+}
+
+.nav_logo img {
+  height: 50px;
+}
+/* Asosiy til tanlash konteyneri */
+.nav_lang_btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: -15px;
+  margin-left: 40px;
+}
+
+/* Tanlangan bayroq (asosiy tugma) */
+.selected_lang {
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #f4a261;
+  transition: background 0.1s ease, transform 0.3s ease;
+}
+
+/* Dropdown menyu */
+.lang_dropdown {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #1b1b1b;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  min-width: 60px;
+  padding: 5px 0;
+  color: #f5b754;
+  /* Animatsiya uchun */
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+
+/* Har bir bayroq */
+.lang_option {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  color: #f5b754;
+}
+
+/* Hover qilinganda fon o‘zgarishi */
+.lang_option:hover {
+  transform: scale(1.1);
+}
+
+/* .nav_lang_btn hover bo‘lsa dropdown asta chiqadi */
+.nav_lang_btn:hover .lang_dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 110%; /* Sal pastroqdan chiqishi uchun */
+  left: 0;
+  background-color: #1b1b1b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  transition: .3s ease-in-out;
+
+}
+
+.dropdown:hover .dropdown_menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  border: 1px solid #f5b754;
+  padding: 10px;
+}
+
+.dropdown_menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+  margin: 10px;
+  transition: .3s ease-in-out;
+}
+
+.dropdown_menu a:hover {
+  background-color: #f5b754;
+  transition: .3s ease-in-out;
+  border-radius: 10px;
+  color: #1b1b1b;
+}
+
+/* Logo */
+.nav_logo img {
+  height: 50px;
+}
+
+/* Til tanlash tugmasi */
+.nav_lang_btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Dropdown menyu */
+.lang_dropdown {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #1b1b1b;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  min-width: 60px;
+  padding: 5px 0;
+  color: #f5b754;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+
+.nav_lang_btn:hover .lang_dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.aluminium-dropdown {
+  position: relative;
+}
+
+.aluminium-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #1b1b1b;
+  display: none;
+  padding: 5px 10px;
+  border: 1px solid #f5b754;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.aluminium-dropdown:hover .aluminium-menu {
+  display: block;
+}
+
+.navbar_main_menu_and_close {
+  display: none;
+}
+
+
+@media (max-width: 1014px) {
+  .navbar_main_menu_and_close {
+    display: flex;
+    color: #f5b754;
+    z-index: 11;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+  }
+
+  .nav_main_links.active {
+    left: 0; 
+  }
+
+  .nav_main_links a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    margin-top: 20px;
+  }
+
+  .nav_main_links a:hover {
+    color: #ffcc33; 
+  }
+
+  .dropdown_link{
+    position: relative;
+    top: 10px;
+  }
+
+  .nav_main_links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: auto;
+    background-color: rgba(27, 27, 27, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: left 0.4s ease-in-out;
+    z-index: 10;
+    gap: 15px; 
+    height: 100vh;
+  }
+  
+  .nav_main_links.active {
+    left: 0;
+  }
+  
+  .nav_main_links a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+}

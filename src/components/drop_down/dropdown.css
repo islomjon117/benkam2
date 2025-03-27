@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.alloy-6005a_dropdown {
+  background: #1b1b1b;
+  width: 100%;
+  padding: 20px 0;
+  padding-top: 100px;
+}
+
+.alloy-6005a_drop_down_box1 {
+  border: 2px solid #f5b754;
+  border-left: none;
+  border-right: none;
+  padding: 20px 0;
+  transition: all 0.5s ease-in-out;
+  align-items: flex-start;
+}
+
+.alloy-6005a_dropdown_right {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alloy-6005a_dropdown_left {
+  width: 100%;
+}
+
+.alloy-6005a_dropdown_left h1 {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.alloy-6005a_dropdown_left p {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out,
+    padding 0.5s ease-in-out;
+}
+
+.alloy-6005a_drop_down_box1.open .alloy-6005a_dropdown_left p {
+  opacity: 1;
+  max-height: 500px;
+  padding-top: 40px;
+}
+
+.alloy-6005a_dropdown_right {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out,
+    margin-top 0.5s ease-in-out;
+}
+
+.alloy-6005a_drop_down_box1.open .alloy-6005a_dropdown_right {
+  opacity: 1;
+  max-height: 500px;
+  margin-top: 30px;
+}
+
+.alloy-6005a_dropdown_right p {
+  color: white;
+  width: 35%;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.alloy-6005a_dropdown_img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Aylanayotgan pastga tushish icon */
+.dropdownarrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.alloy-6005a_dropdown_right img {
+  border-radius: 10px;
+  width: 50%;
+  margin-right: 20px;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.greenex4_box{
+    display: flex;
+justify-content: space-between;
+}
+
+.greenex4_box_right,
+.greenex4_box_left{
+    width: 44%;
+    color: white;
+}
+
+.greenex4{
+    background-color: #1b1b1b;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.greenex4_box_left h1,
+.greenex4_box_right h1{
+    color: #f5b754;
+}
+
+.greenex4_box_left p,
+.greenex4_box_right p{
+    margin-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}

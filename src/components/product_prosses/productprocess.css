@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+.productprocess {
+  background: #1b1b1b;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.productprocess_main{
+  padding: 20px;
+}
+
+.productprocess_title h1 {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 45px;
+}
+
+.productprocess_title span {
+  color: #f5b754;
+}
+
+.productprocess_box {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Responsiv uchun */
+}
+
+.productprocess_box1 {
+  background: #222222;
+  width: 100%;
+  max-width: 400px; /* Katta ekranlar uchun cheklash */
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid #f5b754;
+}
+
+.box_number {
+  background: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* O'lchamni responsiv qilish */
+  height: 80px;
+  margin-top: -50px;
+  margin-left: -10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 17px;
+  color: white;
+  font-size: 16px;
+}
+
+.box_number span {
+  background: #222222;
+  width: 60px;
+  border: 2px solid #f5b754;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Slabo 27px", serif;
+}
+
+.box_title {
+  position: relative;
+  top: 20px;
+  font-weight: 800;
+  color: white;
+  padding: 20px;
+}
+
+.box_comment {
+  color: white;
+  padding: 20px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-family: "Slabo 27px", serif;
+}
+
+.process_info {
+  margin-top: 20px;
+}
+
+/* === RESPONSIVE DESIGN === */
+
+/* Planshetlar (768px dan kichik ekranlar) */
+@media (max-width: 768px) {
+  .productprocess_title h1 {
+    font-size: 35px;
+    padding-top: 60px;
+  }
+
+  .productprocess_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productprocess_box1 {
+    max-width: 90%; /* Ekran bo‘ylab moslashadi */
+    height: auto; /* Dinamik balandlik */
+    padding: 20px;
+  }
+
+  .box_number {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    margin-top: -40px;
+  }
+
+  .box_number span {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+/* Telefonlar (480px dan kichik ekranlar) */
+@media (max-width: 480px) {
+  .productprocess_box{
+    padding-left: 15px;
+  }
+  .productprocess_title h1 {
+    font-size: 28px;
+  }
+
+  .productprocess_box1 {
+    max-width: 100%; /* Butun ekran bo‘ylab joylashadi */
+    height: auto;
+    padding: 15px;
+  }
+
+  .box_number {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .box_number span {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+}

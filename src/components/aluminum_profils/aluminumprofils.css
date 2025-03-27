@@ -1,0 +1,51 @@
+.aluminumprofils{
+    background-color: #1b1b1b;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.aluminum_profils_title {
+  text-align: center;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.aluminum_profils_title span{
+  color: #f5b754;
+}
+
+.alimunim_profils_box_right p{
+    margin: 10px;
+    color: white;
+}
+
+
+
+.alimunim_profils_box_left{
+    max-width: 600px;
+}
+
+.alimunim_profils_box_left img{
+    width: 100%;
+    height: 350px;
+    border: 2px solid #f5b754;
+    border-radius: 10px;
+}
+
+.alimunim_profils_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.alimunim_profils_box_right{
+    width: 700px;
+}
+
+.ddshop_right video{
+    border: 2px solid #f5b754;
+    border-radius: 10px;
+}

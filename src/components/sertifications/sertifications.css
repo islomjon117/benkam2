@@ -1,0 +1,90 @@
+.view,
+.sertifications {
+  background-color: #1b1b1b;
+  padding-bottom: 50px;
+}
+
+.sertifications_main {
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.sertifications_main a {
+  text-decoration: none;
+}
+
+.sertification_box1 {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #f5b754;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sertification_box1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(245, 183, 84, 0.3);
+}
+
+.sertificat_title h1 {
+  color: #f5b754;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.sertificat_title p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.sertifications {
+  width: 100%;
+  overflow-x: hidden; /* Gorizontal scrollni yo‘q qilish */
+}
+
+.sertifications_box1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Desktopda 4 ustun */
+  gap: 20px;
+  max-width: 100%;
+}
+
+.sertification_box1 h1{
+  color: #f5b754;
+  margin-top: 20px;
+}
+
+.sertification_box1 p{
+  color: white;
+  width: 70%;
+  margin-top: 20px;
+}
+
+/* Sertifikat qutichasi */
+.sertification_box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Rasmlar bir xil o'lchamda bo'lishi uchun */
+.sertification_box1 img {
+  width: 150px;  /* O‘zing istagan o‘lcham */
+  height: 150px; /* Kvadrat shaklga keltirish */
+  object-fit: cover; /* Rasm chegaradan chiqib ketmasligi uchun */
+  border-radius: 10px; /* Burchaklarini yumshatish */
+  transition: transform 0.3s ease;
+}
+
+/* Mobil qurilmalar uchun */
+@media (max-width: 768px) {
+  .sertifications_box1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 ustun bo‘lib qoladi */
+  }
+}

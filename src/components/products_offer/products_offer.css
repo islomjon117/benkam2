@@ -1,0 +1,28 @@
+.product_offer{
+    background-color: #1b1b1b;
+    width: 100%;
+}
+
+.product_offer_title{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 24px;
+}
+
+.product_offer_title span{
+    color: #f5b754;
+}
+
+.matrix_img{
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.product_offer_title p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}

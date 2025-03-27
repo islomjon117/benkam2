@@ -1,0 +1,29 @@
+.technical_parametrs{
+    background: #1b1b1b;
+    width: 100%;
+}
+
+.parametrs_title{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding-top: 80px;
+}
+
+.parametrs_title span{
+    color: #f5b754;
+}
+
+.technical_parametr_img{
+    margin: 1080;
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.technical_parametr_img img{
+    width: 1900px;
+    margin: auto;
+    margin-top: 50px;
+}

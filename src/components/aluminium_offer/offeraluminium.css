@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.offerAluminum {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/aluminium_profils/img1.png");
+  width: 100%;
+  height: 800px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Ensures text is centered horizontally */
+}
+
+.aluminium_offer_title {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures all text inside is centered */
+  justify-content: center;
+}
+
+.aluminium_offer_title h1 {
+  font-size: 54px;
+  text-transform: capitalize;
+}
+
+.aluminium_offer_title span {
+  color: #f5b754;
+}
+
+.aluminium_offer_title p {
+  width: 60%;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .aluminium_offer_title h1 {
+    font-size: 32px;
+  }
+
+  .aluminium_offer_title p {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aluminium_offer_title h1 {
+    font-size: 28px;
+  }
+
+  .aluminium_offer_title p {
+    width: 90%;
+    font-size: 14px;
+  }
+}

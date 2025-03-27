@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.products {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../../assets/our_products_img/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px; /* navbar bilan masofani oshiradi */
+}
+
+.products_title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 90%;
+  flex: 1; /* Vertikal markazlashtirish uchun */
+}
+
+.products_title h1 {
+  font-size: 60px;
+  color: #f5b754;
+  margin: 0;
+}
+
+.products_title p {
+  font-size: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Responsive qismi */
+@media (max-width: 768px) {
+  .products {
+    height: 500px;
+    padding-top: 100px; /* Kichik ekranlarda navbar bilan masofa */
+  }
+
+  .products_title h1 {
+    font-size: 40px;
+  }
+
+  .products_title p {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    height: 400px;
+    padding-top: 120px; /* Mobil ekranlar uchun masofa */
+  }
+
+  .products_title h1 {
+    font-size: 30px;
+  }
+
+  .products_title p {
+    font-size: 14px;
+    margin-top: 15px;
+    max-width: 90%;
+  }
+}

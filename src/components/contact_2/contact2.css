@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.contact2 {
+  background: #1b1b1b;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact2_main {
+
+  height: auto;
+  border: 2px solid #202020;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Lato", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 20px;
+  gap: 20px;
+}
+
+.address_box,
+.email_box,
+.phone_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.address_icon p,
+.phone_icon p,
+.email_icon p {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5b754;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #1b1b1b;
+  padding-top: 7px;
+}
+
+.box1313 {
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contact2_main {
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start; /* Elementlar startda turishi uchun */
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+  }
+
+  .left_side,
+  .right_side {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Elementlar startda joylashadi */
+  }
+
+  .left_side {
+    flex-wrap: wrap;
+  }
+}

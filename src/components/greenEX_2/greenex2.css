@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.greenex2{
+    background: #1b1b1b;
+    padding-top: 100px;
+}
+
+.greenex2_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greenex2_box_right{
+    width: 44%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+font-size: 18px;
+}
+
+.greenex2_box_left img{
+    width: 70%;
+}

@@ -1,0 +1,38 @@
+.offer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/offer/img1.png);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.offer_titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+}
+
+.offer_title_1, .offer_title_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+}
+
+.offer_title_2{
+    color: #f5b754;
+}
+
+@media (max-width: 768px) {
+    .offer_title_2{
+        font-size: 16px;
+    }
+}

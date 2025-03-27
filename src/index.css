@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+/* Scrollbar o'lchami */
+::-webkit-scrollbar {
+  width: 8px; /* Yon tomondagi scrollbar eni */
+  height: 8px; /* Pastdagi scrollbar (gorizontal) balandligi */
+}
+
+/* Scrollbar yo'li (background) */
+::-webkit-scrollbar-track {
+  background: #1b1b1b; /* Qorong'i background */
+  border-radius: 10px;
+}
+
+/* Scrollbar o'zi (harakatlanuvchi qismi) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #f4a261, #e76f51); /* Gradient rang */
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+/* Hover qilganda scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #e76f51, #f4a261);
+  transform: scaleY(1.2);
+}
+

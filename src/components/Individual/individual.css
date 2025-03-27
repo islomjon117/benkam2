@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.individual {
+  background: #1b1b1b;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.individual_title {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.individual_title span {
+  color: #f5b754;
+}
+
+.individual_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+.individual_box_left {
+  width: 40%;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px; /* Bu qator qo'shildi */
+}
+
+.individual_box_right {
+  max-width: 700px;
+  margin-bottom: 20px; /* Bu qator qo'shildi */
+}
+
+.individual_box_right video {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #f5b754;
+}
+
+.individual_box_right img {
+  width: 100%;
+  border: 2px solid #f5b754;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.individual_box_left p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Mobil uchun o'lcham */
+@media (max-width: 1280px) {
+  .individual_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .individual_box_left {
+    width: 80%;
+    text-align: center;
+  }
+
+  .individual_box_right {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .individual_box_right video, .individual_box_right img {
+    max-width: 100%;
+  }
+
+  .individual_title {
+    font-size: 22px;
+  }
+
+  .individual_box_left p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .individual_box_left {
+    width: 90%;
+  }
+
+  .individual_title {
+    font-size: 20px;
+  }
+
+  .individual_box_left p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .individual_box_left {
+    width: 90%;
+  }
+
+  .individual_title {
+    font-size: 18px;
+  }
+
+  .individual_box_left p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.green3 {
+  background: #1b1b1b;
+}
+
+.green3_text_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.green3_text_left,
+.green3_text_right {
+  width: 44%;
+  margin-top: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.green3_text_left h1 {
+  font-size: 64px;
+}
+
+.green3_text_left p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.green3_text_right p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.green3_text_right h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.green3_text_left span {
+  color: #f5b754;
+  text-transform: uppercase;
+}

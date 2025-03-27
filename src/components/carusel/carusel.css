@@ -1,0 +1,44 @@
+.carusel {
+  background: #1b1b1b;
+}
+
+.mySwiper {
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carusel_box {
+  position: relative;
+  padding-top: 200px;
+}
+
+.carusel_title h1 {
+  position: relative;
+  top: 100px;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+}
+
+.carusel_title h1 > span {
+  color: #f5b754;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-img{
+    height: 220px;
+  }
+
+  .carusel_box .mySwiper{
+    padding: 10px;
+  }
+}

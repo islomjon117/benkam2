@@ -1,0 +1,24 @@
+.regreenex{
+    background: #1b1b1b;
+    padding-top: 100px;
+    display: flex;
+}
+
+.regreenex_box{
+    margin-left: 250px;
+}
+
+.regreenex_right img{
+    width: 600px;
+}
+
+.regreenex_logo img{
+    width: 350px;
+}
+
+.regreenex_left p{
+    width: 44%;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}

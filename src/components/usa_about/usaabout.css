@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.usaabout {
+  background-color: #1b1b1b;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.usaabout_main {
+  width: 60%;
+  margin: auto;
+  border: 2px solid #f5b754;
+  border-radius: 10px;
+}
+
+.usaabout_main p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+.usa_info_download{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.usa_info_download button{
+    width: 80px;
+    height: 80px;
+    outline: none;
+    border: 2px solid #f5b754;
+    background-color: transparent;
+    color: white;
+    font-size: 34px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.usa_info_download button:hover{
+    background-color: #f5b754;
+    color: #1b1b1b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .usaabout_main p {
+      font-size: 16px;
+    }
+  
+    .download-btn {
+      font-size: 18px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .usaabout_main p {
+      font-size: 14px;
+    }
+  
+    .download-btn {
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+  }

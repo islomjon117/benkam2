@@ -1,0 +1,31 @@
+.partners {
+  background: #222222;
+}
+
+.partners_marquee img {
+  width: 160px;
+  margin: 50px;
+  transition: .4s;
+}
+
+.partners_marquee {
+  display: flex;
+  align-items: center;
+}
+
+.partners_marquee img:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.partners_title{
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 40px;
+font-size: 40px;
+}
+
+.partners_title span{
+  color: #f5b754;
+}

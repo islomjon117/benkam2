@@ -1,0 +1,57 @@
+.greenex7 {
+  background: #1b1b1b;
+  padding-top: 100px;
+}
+
+.greenex7_box {
+  width: 400px;
+  text-align: center;
+  border: 2px solid #f5b754;
+  height: 250px;
+  padding: 40px;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.greenex7_left {
+  font-size: 50px;
+  color: #f5b754;
+}
+
+.greenex7_main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.greenex7_right p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.greenex7_right {
+  text-align: center;
+}
+
+.greenex7_box:hover {
+  transform: scale(1.2);
+  background-color: #f5b754;
+  border-radius: 20px;
+}
+
+.greenex7_box:hover p {
+  color: #1b1b1b;
+  transition: 0.3s ease-in-out;
+}
+
+.greenex7_box:hover h1 {
+  color: #1b1b1b;
+  transition: 0.3s ease-in-out;
+}
+
+.greenex7_box h1{
+  transition: 0.3s ease-in-out;
+}
