@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./Header.css";
+import "../header/header.css";
 
 import bg from "../../assets/header_bg/header_bg.mp4";
 import { Link } from "react-router-dom";
